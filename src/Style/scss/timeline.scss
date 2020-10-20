@@ -1,0 +1,32 @@
+$rotation: 45deg;
+$size: 1.8em;
+
+.timeline-square {
+  background-color: #00BEA4;
+  -webkit-transform: rotate($rotation);
+  -moz-transform: rotate($rotation);
+  -o-transform: rotate($rotation);
+  -ms-transform: rotate($rotation);
+  transform: rotate($rotation);
+  min-width: $size;
+  max-width: $size;
+  min-height: $size;
+  max-height: $size;
+  height: $size;
+  position: absolute;
+}
+
+.timeline-card {
+  margin-bottom: 0.5em;
+  border-color: 1px solid #00BEA4;
+}
+
+.btn-link-panel {
+  padding: 0;
+  padding-bottom: 3px;
+
+  &:disabled, &:disabled:hover {
+    color: red;
+    cursor: not-allowed;
+  }
+}

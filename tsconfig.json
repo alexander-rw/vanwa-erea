@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "noImplicitAny": false,
+  },
+  "include": [
+    "src/**/*",
+    "src/@types",
+    "src/@data",
+    "src/@data/worldMap",
+    "src/@data/features",
+    "src/Constants/*",
+    "src/ReduxStore/*",
+    "src/Utilities/*",
+    "src/Components/*",
+    "src/Style/*",
+  ]
+}

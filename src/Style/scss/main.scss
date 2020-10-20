@@ -1,0 +1,94 @@
+@import "./toast.scss";
+@import "./sidepanel.scss";
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./timeline.scss";
+
+@mixin maxSize {
+  width: 100vw;
+  height: 100vh;
+}
+
+html, body, #worldviewr {
+  margin: 0;
+  @include maxSize();
+}
+
+.worldviewr-map-container, .phlogiston-bg {
+  @include maxSize();
+}
+
+.worldviewr-map-container {
+  background-color: #aad3df;
+}
+
+.bm-item-last {
+  position: absolute;
+  bottom: 20px;
+}
+
+.page-padding-top {
+  padding-top: 6em;
+}
+
+.bm-item-link {
+  color: white;
+  font-size: 230%;
+  text-decoration-line: none;
+  &:hover {
+    color: white;
+    text-decoration-line: none;
+  }
+}
+
+.bm-item-list {
+  padding: 0;
+}
+
+.phlogiston-bg {
+  background-image: $phlogistonUrl;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.app-search-bar {
+  position: fixed;
+  top: $smallPadding;
+  right: $smallPadding;
+  max-width: $appSearchBarWidth;
+  z-index: 10001;
+}
+
+.app-search-input {
+  border: 2px solid black;
+  border-radius: 0;
+  max-width: 4em;
+  float: right;
+}
+
+.app-search-input-focused {
+  max-width: $appSearchBarWidth;
+}
+
+.worldviewr-zoom-extent {
+  top: $doubleSmallPadding;
+  left: $smallPadding;
+}
+
+.worldviewr-zoom {
+  bottom: 2.5em;
+  left: $smallPadding;
+}
+
+.worldviewr-mouse-position {
+  position: absolute;
+  background-color: white;
+  bottom: $smallPadding;
+  right: $smallPadding;
+  padding: .15em .25em;
+  border-radius: 3px;
+  min-width: 30px;
+}
+
+/* */

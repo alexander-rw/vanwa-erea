@@ -1,0 +1,163 @@
+@import "variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@mixin panelPosition {
+  z-index: 1000;
+  position: fixed;
+  top: $panelTopOffset;
+  right: $panelSideOffset;
+  box-shadow: $boxShadowSmall;
+  background-color: $sepia;
+  padding: $sidePadding $topPadding;
+  border-top: $panelHighlightThickness solid $orange;
+  border-bottom: $panelHighlightThickness solid $orange;
+}
+
+@mixin sidePanelHeading {
+	font-size: 1.4em;
+	font-family: "Andada", serif;
+	font-variant: small-caps;
+	font-weight: 500;
+	padding-left: 0.1em !important;
+	border-bottom: 1px solid $ironRed;
+	color: $ironRed;
+}
+
+@mixin paragraph {
+  margin-left: $sidePadding;
+  margin-right: $sidePadding;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin noHoverChange() {
+  button {
+    &:hover {
+      border: none !important;
+    }
+    &:focus {
+      border: none !important;
+    }
+    &:link {
+      border: none !important;
+    }
+    &:active {
+      border: none !important;
+    }
+    &::before, &::after {
+      border: none !important;
+    }
+  }
+}
+
+.panel-outer-div {
+  .panel-container {
+    @include panelPosition();
+    min-width: $panelMinWidth;
+    max-width: $panelMaxWidth;
+    width: $panelWidth;
+    min-height: $panelHeight;
+    max-height: $panelHeight;
+    height: $panelHeight;
+
+    .panel-container-scrollable {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      height: $panelScrollableHeight;
+      padding-right: 0.6em;
+
+      h1, h2, h3 {
+        @include sidePanelHeading();
+      }
+
+      h1 {
+        font-size: 2.4em;
+      }
+
+      h2 {
+        font-size: 1.65em;
+      }
+
+      h3 {
+        font-size: 1.6em;
+      }
+
+      p {
+        @include paragraph();
+      }
+
+      b button.btn-link-panel {
+        font-weight: bold;
+      }
+
+      span, div {
+        p {
+          @include paragraph();
+        }
+
+        ul {
+          padding-left: 1.6em;
+          li {
+            padding: 0.1em;
+          }
+        }
+      }
+    }
+
+    .btn-panel-minimise {
+      position: absolute;
+      right: 0.73em;
+      top: 0.62em;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .panel-container {
+      width: $panelWidthSm;
+    }
+  }
+
+  .panel-container-minimised {
+    @include panelPosition();
+    width: $panelMinimisedWidth;
+    height: $panelMinimisedHeight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    background-color: $ironRed !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited,
+    &:active:focus,
+    &.active,
+    &.focus,
+    &.active:focus {
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .btn-link-panel {
+    padding: 0;
+    padding-bottom: 1px;
+
+    &:disabled, &:disabled:hover {
+      color: red;
+      cursor: not-allowed;
+    }
+  }
+}
+

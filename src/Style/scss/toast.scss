@@ -1,0 +1,26 @@
+// Increase button size by default
+
+$size: 200%;
+$black: #000000;
+$white: #ffffff;
+
+.Toastify__close-button {
+  font-size: $size;
+  color: $white;
+}
+
+.Toastify__close-button--default {
+  font-size: $size;
+  color: $white;
+}
+
+// Color prop correctly
+.Toastify__toast {
+  background-color: $black;
+  color: $white;
+}
+
+.Toastify__toast--default {
+  background-color: $black;
+  color: $white;
+}
