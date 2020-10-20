@@ -1,0 +1,4 @@
+*.ts eol=LF
+*.tsx eol=LF
+*.json eol=LF
+*.docx binary
