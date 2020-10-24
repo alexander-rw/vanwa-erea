@@ -67,7 +67,10 @@
     "uuid": "^3.4.0",
     "winston": "^3.3.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -77,13 +80,17 @@
     "lint": "eslint ."
   },
   "eslintConfig": {
-    "extends": ["react-app"],
+    "extends": [
+      "react-app"
+    ],
     "rules": {
       "indent": "off"
     },
     "overrides": [
       {
-        "files": ["**/*.ts?(x)"],
+        "files": [
+          "**/*.ts?(x)"
+        ],
         "rules": {
           "no-array-constructor": "off",
           "no-empty-function": "off",
@@ -91,27 +98,61 @@
           "no-var": "error",
           "prefer-const": "error",
           "no-use-before-define": "off",
-          "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
+          "arrow-parens": [
+            "error",
+            "as-needed",
+            {
+              "requireForBlockBody": true
+            }
+          ],
           "no-multiple-empty-lines": "error",
           "prefer-rest-params": "error",
           "no-trailing-spaces": "error",
-          "max-len": ["warn", { "code": 840 }],
+          "max-len": [
+            "warn",
+            {
+              "code": 840
+            }
+          ],
           "react/prop-types": "off",
           "react/prefer-stateless-function": "off",
-          "react/jsx-boolean-value": ["error", "always"],
-          "no-warning-comments": ["warn", { "terms": ["todo", "TODO"] }],
+          "react/jsx-boolean-value": [
+            "error",
+            "always"
+          ],
+          "no-warning-comments": [
+            "warn",
+            {
+              "terms": [
+                "todo",
+                "TODO"
+              ]
+            }
+          ],
           "import/prefer-default-export": "off",
           "import/no-default-export": "error",
-          "import/order": ["error", {
-            "newlines-between": "always-and-inside-groups",
-            "alphabetize": {
-              "order": "asc"
+          "import/order": [
+            "error",
+            {
+              "newlines-between": "always-and-inside-groups",
+              "alphabetize": {
+                "order": "asc"
+              }
             }
-          }],
-          "quotes": ["error", "double"],
+          ],
+          "quotes": [
+            "error",
+            "double"
+          ],
           "camelcase": "error",
-          "@typescript-eslint/indent": ["error", 2],
-          "@typescript-eslint/quotes": ["error", "double"],
+          "@typescript-eslint/indent": [
+            "error",
+            2
+          ],
+          "@typescript-eslint/quotes": [
+            "error",
+            "double"
+          ],
           "@typescript-eslint/no-array-constructor": "error",
           "@typescript-eslint/adjacent-overload-signatures": "error",
           "@typescript-eslint/ban-types": "error",
