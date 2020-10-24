@@ -1,4 +1,4 @@
-import { debounce, Cancelable } from "lodash";
+import { debounce, DebouncedFunc } from "lodash";
 import React, { ChangeEvent } from "react";
 
 import { WorldData, WorldDataType } from "../../@data/worldData";
@@ -13,7 +13,7 @@ type SearchableDataEntry = {
 };
 
 export class SearchBar extends BaseComponent<{}, { focused: boolean; searchTerm: string }> {
-  search: VoidFunc & Cancelable;
+  search: DebouncedFunc<VoidFunc>;
 
   searchData: SearchableDataEntry[];
 
@@ -64,9 +64,7 @@ export class SearchBar extends BaseComponent<{}, { focused: boolean; searchTerm:
     );
   }
 
-  componentWillUnmount(): void {
-    this.search.cancel();
-  }
+  componentWillUnmount = (): void => this.search.cancel();
 
   private onFocus = (): void => this.setState({ focused: true });
 

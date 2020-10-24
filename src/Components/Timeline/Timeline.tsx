@@ -1,4 +1,4 @@
-import { debounce, Cancelable } from "lodash";
+import { debounce, DebouncedFunc } from "lodash";
 import React, { ChangeEvent } from "react";
 
 import {
@@ -22,7 +22,7 @@ interface TimelineState {
 }
 
 export class TimelinePanelUpdater extends PanelUpdater<{}, TimelineState> {
-  search: VoidFunc & Cancelable;
+  search: DebouncedFunc<VoidFunc>;
 
   constructor(props, state) {
     super(props, state);
@@ -106,17 +106,16 @@ export class TimelinePanelUpdater extends PanelUpdater<{}, TimelineState> {
 
   private searchDataBySearchTerm = (): void => { // eslint-disable-line arrow-body-style
     const { searchTerm } = this.state;
-    return searchTerm === ""
-      ? this.setState({ filteredEvents: WorldData.events })
-      : this.setState({
-        filteredEvents: WorldData.events
-          .filter(e => JSON.stringify([
-            e.description.toLowerCase(),
-            e.happenedAtLocation.toLowerCase(),
-            e.date.humanise().toLowerCase(),
-            e.date.iso8601(),
-          ]).includes(searchTerm)),
-      });
+    const filteredEvents = searchTerm === ""
+      ? WorldData.events
+      : WorldData.events
+        .filter(e => JSON.stringify([
+        e.description.toLowerCase(),
+        e.happenedAtLocation.toLowerCase(),
+        e.date.humanise().toLowerCase(),
+        e.date.iso8601(),
+      ]).includes(searchTerm));
+      this.setState({ filteredEvents })
   };
 
   private onChange(e: ChangeEvent<HTMLInputElement>): void {
