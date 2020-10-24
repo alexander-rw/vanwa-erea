@@ -1,18 +1,14 @@
-FROM node:13.12.0-alpine
+FROM node:13.12.0-alpine as builder
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
-# install app dependencies
-COPY package.json package-lock.json ./ ./
-RUN npm install
-RUN npm install react-scripts serve -g
-
-# add app
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm ci --silent
+RUN npm install react-scripts@3.4.4 -g --silent
 COPY . ./
+RUN npm run build
 
-# run app
-
-#RUN npm install
-#RUN npm run build
-#WORKDIR /app
-#COPY --from=builder /app/build .
-#CMD ["serve", "-p", "80", "-s", "."]
+FROM nginx:stable-alpine
+COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
