@@ -23,6 +23,7 @@ import { Items } from "../Items/Items";
 import { NavBar } from "../Menu/NavBar";
 
 import { InfoSidePanel } from "../Panel/InfoSidePanel";
+import { ShipCalc } from "../ShipCalculator/ShipCalc";
 import { Timeline } from "../Timeline/Timeline";
 import { Visualiser } from "../Visualiser/Visualiser";
 import { OpenLayersMap } from "../WorldMap/OpenLayersMap";
@@ -38,7 +39,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "react-toastify/dist/ReactToastify.css";
 import "ol/ol.css";
 import "../../Style/scss/main.scss";
-import { ShipCalc } from "../ShipCalculator/ShipCalc";
 
 export class App extends BaseComponent {
   constructor(props, state) {

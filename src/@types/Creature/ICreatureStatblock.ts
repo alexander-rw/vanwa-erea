@@ -2,9 +2,8 @@ import { Alignment } from "../Alignment/Alignment";
 
 import { CreatureAbility } from "./CreatureAbility";
 import { CreatureSenses } from "./CreatureSenses";
-import { CreatureSkills, SkillNames } from "./CreatureSkills";
 
-export interface ICreatureStatblock { // eslint-disable-line @typescript-eslint/interface-name-prefix
+export interface ICreatureStatblock {
   name: string;
 
   size: "Tiny" | "Small" | "Medium" | "Large" | "Huge" | "Gargantuan";

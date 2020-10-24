@@ -3,7 +3,7 @@ import { DisplayableDataObject } from "../../@types/Panel/DisplayableDataObject"
 import { PanelUpdateProps } from "../../@types/Panel/PanelUpdaterProps";
 import { BaseComponent } from "../BaseComponents/BaseComponent";
 
-export class PanelUpdater<T = {}, S = {}> extends BaseComponent<T & PanelUpdateProps, S> {
+export class PanelUpdater<T = unknown, S = unknown> extends BaseComponent<T & PanelUpdateProps, S> {
   constructor(props: T & PanelUpdateProps, state: S) {
     super(props, state);
     this.updatePanelWithDataObject = this.updatePanelWithDataObject.bind(this);

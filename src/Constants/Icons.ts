@@ -18,12 +18,7 @@ import { Dictionary } from "lodash";
 
 import { AppRoutes } from "./AppRoutes";
 
-interface IconMapDefinition {
-  icon: IconDefinition;
-  color: string;
-}
-
-export const appIcons: Dictionary<IconMapDefinition> = {
+export const appIcons: Dictionary<{ icon: IconDefinition; color: string }> = {
   [AppRoutes.Deities]: { icon: faJournalWhills, color: "#BCAC80" },
   [AppRoutes.Map]: { icon: faGlobeAfrica, color: "skyblue" },
   [AppRoutes.Npcs]: { icon: faUserSecret, color: "palevioletred" },

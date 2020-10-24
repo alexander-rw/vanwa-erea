@@ -21,7 +21,7 @@ interface TimelineState {
   searchTerm: string;
 }
 
-export class TimelinePanelUpdater extends PanelUpdater<{}, TimelineState> {
+export class TimelinePanelUpdater extends PanelUpdater<unknown, TimelineState> {
   search: DebouncedFunc<VoidFunc>;
 
   constructor(props, state) {

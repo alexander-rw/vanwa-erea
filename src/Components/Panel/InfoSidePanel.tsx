@@ -23,7 +23,7 @@ class Panel extends PanelUpdater {
     "test",
   ];
 
-  public constructor(props: PanelUpdateProps, state: {}) {
+  public constructor(props: PanelUpdateProps, state: unknown) {
     super(props, state);
     this.onKeydownClearPanel = this.onKeydownClearPanel.bind(this);
   }

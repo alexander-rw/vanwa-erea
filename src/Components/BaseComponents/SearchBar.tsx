@@ -12,7 +12,7 @@ type SearchableDataEntry = {
   entry: WorldDataType;
 };
 
-export class SearchBar extends BaseComponent<{}, { focused: boolean; searchTerm: string }> {
+export class SearchBar extends BaseComponent<unknown, { focused: boolean; searchTerm: string }> {
   search: DebouncedFunc<VoidFunc>;
 
   searchData: SearchableDataEntry[];

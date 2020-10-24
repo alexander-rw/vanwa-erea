@@ -1,9 +1,7 @@
 import { Location } from "../../../../@types/Location/Location";
 import { DataTypeIds } from "../../../../Constants/Ids/DataTypeIds";
 import { LocationIds } from "../../../../Constants/Ids/LocationIds";
-import { NpcIds } from "../../../../Constants/Ids/NpcIds";
 import { separator } from "../../../../Style/ts/separator";
-import { dataItemToLinkable } from "../../../../Utilities/LinkableString";
 
 const id = LocationIds.Albatan;
 
