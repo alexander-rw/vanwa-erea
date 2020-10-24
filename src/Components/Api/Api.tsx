@@ -22,7 +22,7 @@ import { humaniseString } from "../../Utilities/String";
 import { BaseComponent } from "../BaseComponents/BaseComponent";
 
 export class Api extends BaseComponent<unknown, Dictionary<any>> {
-  constructor(props, state) {
+  constructor(props: unknown, state: Dictionary<any>) {
     super(props, state);
     const {
       npcs,
