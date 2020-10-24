@@ -188,7 +188,7 @@ class OlMap extends PanelUpdater<P, S> {
       this.olMap.getPixelFromCoordinate(e.coordinate),
       (feature) => {
         feats.push({ zIndex: feature.get("zIndex"), id: feature.get("name") });
-    });
+      });
 
     const featIds: string[] = feats.sort((a, b) => b.zIndex - a.zIndex).map(f => f.id);
 

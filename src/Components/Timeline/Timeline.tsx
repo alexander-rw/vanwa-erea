@@ -64,7 +64,7 @@ export class TimelinePanelUpdater extends PanelUpdater<{}, TimelineState> {
                 delay={{ show: 100, hide: 150 }}
                 overlay={
                   <Tooltip style={{ zIndex: 1000 }} id={v4()}>{e.date.iso8601()}</Tooltip>
-            }
+                }
               >
                 <span className="timeline-square" />
               </OverlayTrigger>
@@ -110,12 +110,12 @@ export class TimelinePanelUpdater extends PanelUpdater<{}, TimelineState> {
       ? WorldData.events
       : WorldData.events
         .filter(e => JSON.stringify([
-        e.description.toLowerCase(),
-        e.happenedAtLocation.toLowerCase(),
-        e.date.humanise().toLowerCase(),
-        e.date.iso8601(),
-      ]).includes(searchTerm));
-      this.setState({ filteredEvents })
+          e.description.toLowerCase(),
+          e.happenedAtLocation.toLowerCase(),
+          e.date.humanise().toLowerCase(),
+          e.date.iso8601(),
+        ]).includes(searchTerm));
+    this.setState({ filteredEvents })
   };
 
   private onChange(e: ChangeEvent<HTMLInputElement>): void {

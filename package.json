@@ -109,9 +109,9 @@
             }
           }],
           "quotes": ["error", "double"],
-          "camelcase": "warn",
-          "@typescript-eslint/indent": ["warn", 2],
-          "@typescript-eslint/quotes": ["warn", "double"],
+          "camelcase": "error",
+          "@typescript-eslint/indent": ["error", 2],
+          "@typescript-eslint/quotes": ["error", "double"],
           "@typescript-eslint/no-array-constructor": "error",
           "@typescript-eslint/adjacent-overload-signatures": "error",
           "@typescript-eslint/ban-types": "error",

@@ -683,12 +683,12 @@ const eventConstructors: WorldEventConstructor[] = [
   {
     loc: LocationIds.Rorekstead,
     dateVals: [5, 172, 4, 11],
-    description: `Blue dragon attack on Rorekstead.`,
+    description: "Blue dragon attack on Rorekstead.",
   },
   {
     loc: LocationIds.PortVsara,
     dateVals: [5, 172, 4, 9],
-    description: `Elkain moves to Port V'Sara, and takes over the Ett-Inn.`,
+    description: "Elkain moves to Port V'Sara, and takes over the Ett-Inn.",
   },
 ];
 
