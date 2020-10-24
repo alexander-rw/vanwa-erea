@@ -9,7 +9,7 @@ import {
 
 import { BaseComponent } from "../BaseComponents/BaseComponent";
 
-export class ShipCalc extends BaseComponent<{}, { profit: number }> {
+export class ShipCalc extends BaseComponent<unknown, { profit: number }> {
   private calculateProfit(): number {
     return (this.#cargoLimitLbs
       * this.#cargoFraction

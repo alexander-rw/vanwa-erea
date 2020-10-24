@@ -21,7 +21,7 @@ import { appIcons } from "../../Constants/Icons";
 import { humaniseString } from "../../Utilities/String";
 import { BaseComponent } from "../BaseComponents/BaseComponent";
 
-export class Api extends BaseComponent<{}, Dictionary<any>> {
+export class Api extends BaseComponent<unknown, Dictionary<any>> {
   constructor(props, state) {
     super(props, state);
     const {

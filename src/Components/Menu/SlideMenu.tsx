@@ -2,7 +2,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 
-import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import { slide as Slide, State } from "react-burger-menu";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";

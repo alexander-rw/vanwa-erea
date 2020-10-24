@@ -1,9 +1,9 @@
 import { Location } from "../../../../@types/Location/Location";
 import { DataTypeIds } from "../../../../Constants/Ids/DataTypeIds";
-import { LocationIds } from "../../../../Constants/Ids/LocationIds";
-import { separator } from "../../../../Style/ts/separator";
 import { DeityIds } from "../../../../Constants/Ids/DeityIds";
+import { LocationIds } from "../../../../Constants/Ids/LocationIds";
 import { NpcIds } from "../../../../Constants/Ids/NpcIds";
+import { separator } from "../../../../Style/ts/separator";
 import { dataItemToLinkable } from "../../../../Utilities/LinkableString";
 
 const id = LocationIds.Hraclos;
@@ -88,7 +88,7 @@ export const Hraclos: Location = {
     `],
     ["Red Row (Level -1):", `A bustling, smoky, fire-lit knot of activity, Red Row attracts the best and worst the undercity has to offer. Criminals rub shoulders with powder-cheeked nobles, filthy gutterkin wait tables, and retroengineers ply their dangerous wares on every street corner.
     Law and order are strange, half-remembered concepts to many of the inhabitants, and while the Guard maintain a token presence down here, much of the day-to-day enforcement is carried out by gangs of armed humans and drow working for one of the three 'bosses' who run the joint.`],
-    ["Derelictus (Level -2)", `A mostly abandoned level, Buried in the city bowels, Derelictus is a thrice cursed mess of broken masonry, tunnels to nowhere, and wet runoff from the layers above. Here, the dregs of the populace struggle to survive from day to day, killers stalk the streets, and darkness permeates the area. What little light there is down here is artificial, or carried by the populace, and the entire place is covered in shadows and dirty magic.`],
+    ["Derelictus (Level -2)", "A mostly abandoned level, Buried in the city bowels, Derelictus is a thrice cursed mess of broken masonry, tunnels to nowhere, and wet runoff from the layers above. Here, the dregs of the populace struggle to survive from day to day, killers stalk the streets, and darkness permeates the area. What little light there is down here is artificial, or carried by the populace, and the entire place is covered in shadows and dirty magic."],
     ["The Heart (Level -3 and below):", `There is a blistering, infectious, otherworldly magic at the centre of ${id}. as though the structure is so alien, so impossible, that the deeper one proceeds within, the less hold reality has over the world. The Heart, deep below ground and nestled within mage-warped tunnels and flickering dead ends, is the dead centre of the structure. Rational time and space – as the rest of the world would know it - are a long-lost memory to the strange things that live there.
     If it is impossible to map the city with any accuracy, it is doubly impossible to map the Heart. Those guides that can be found, huddled in the corners of Derelictus bars staring blankly into their liquor or perched in the ruins of a building on the edge of the Heart, eyes glinting in the dark, ply their trade through intuition, not memory. They feel the space of the Heart the way one would feel the skin of a lover, or warily eye a barking hound, and can smell the routes they’re asked to take.
     Doors and passageways flicker in and out of existence like faulty magelights; corridors constrict and crush trespassers; the floors buckle and undulate, their surface somehow unbreaking.`],

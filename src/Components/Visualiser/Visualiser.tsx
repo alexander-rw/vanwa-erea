@@ -12,7 +12,7 @@ import { PanelUpdater } from "../Panel/PanelUpdater";
 
 const radius = (screen.height / 2) - 50;
 
-export class Vis extends PanelUpdater<{}> {
+export class Vis extends PanelUpdater<unknown> {
   public static readonly cyName: string = "cytoscapeDeityVisualiser";
 
   componentDidMount(): void {

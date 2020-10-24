@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Position } from "geojson";
 import { MapBrowserEvent } from "ol";
 import Map from "ol/Map";
@@ -31,7 +30,6 @@ import { screen } from "../../Utilities/Screen";
 import { ConnectedPanelUpdater } from "../Panel/ConnectedPanelUpdater";
 import { PanelUpdater } from "../Panel/PanelUpdater";
 
-
 interface P {
   match: match<{ id: string }>;
 }
@@ -55,7 +53,7 @@ class OlMap extends PanelUpdater<P, S> {
 
   private featureLayer: VectorLayer;
 
-  constructor(props, state) {
+  constructor(props, state: S) {
     super(props, state);
     this.state = {
       center: [29, 10],
@@ -188,7 +186,7 @@ class OlMap extends PanelUpdater<P, S> {
       this.olMap.getPixelFromCoordinate(e.coordinate),
       (feature) => {
         feats.push({ zIndex: feature.get("zIndex"), id: feature.get("name") });
-    });
+      });
 
     const featIds: string[] = feats.sort((a, b) => b.zIndex - a.zIndex).map(f => f.id);
 

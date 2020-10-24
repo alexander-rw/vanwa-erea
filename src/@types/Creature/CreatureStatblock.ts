@@ -40,7 +40,7 @@ export class CreatureStatblock {
 
   info?: string[];
 
-  skills?: any[];
+  skills?: string[];
 
   constructor(sb: ICreatureStatblock) {
     this.name = sb.name;
