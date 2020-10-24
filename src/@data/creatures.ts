@@ -3,7 +3,7 @@ import { CreatureStatblock } from "../@types/Creature/CreatureStatblock"
 import { Alignment } from "../@types/Alignment/Alignment";
 import { CreatureSenses } from "../@types/Creature/CreatureSenses";
 
-const creatureDefinitions: any[] = [
+const creatureDefinitions: ICreatureStatblock[] = [
     {
         name: "Vanan Mandros",
         info: [
@@ -68,7 +68,7 @@ const creatureDefinitions: any[] = [
         traits: [],
         legendaryActions: [],
         actions: [],
-        skill: [],
+        skills: [],
     },
     {
         name: "Malygos Mandros",
@@ -97,7 +97,7 @@ const creatureDefinitions: any[] = [
         traits: [],
         legendaryActions: [],
         actions: [],
-        skill: [],
+        skills: [],
     },
     {
         name: "Elune Mandros",
@@ -126,7 +126,7 @@ const creatureDefinitions: any[] = [
         traits: [],
         legendaryActions: [],
         actions: [],
-        skill: [],
+        skills: [],
     },
     {
         name: "Akrhan The Cruel",
@@ -159,7 +159,7 @@ const creatureDefinitions: any[] = [
         traits: [],
         legendaryActions: [],
         actions: [],
-        skill: [],
+        skills: [],
     },
 ];
 

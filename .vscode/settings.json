@@ -1,17 +1,5 @@
 {
     "typescript.tsdk": "node_modules/typescript/lib",
-    "eslint.enable": true,
-    "eslint.packageManager": "npm",
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
-    "eslint.codeAction.disableRuleComment":{
-      "enable": true,
-      "location": "sameLine"
-    },
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     },
