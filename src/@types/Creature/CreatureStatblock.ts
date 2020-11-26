@@ -1,18 +1,12 @@
-import type { AbilityValue } from "../Ability/AbilityValue";
+import { modFromValue } from "../Ability/AbilityValue";
 import type { Alignment } from "../Alignment/Alignment";
 
 import type { CreatureAbility } from "./CreatureAbility";
+import type { CreatureStats } from "./CreatureStats";
 import type { ICreatureStatblock } from "./ICreatureStatblock";
 
 export class CreatureStatblock {
-  stats: {
-    str: AbilityValue;
-    dex: AbilityValue;
-    con: AbilityValue;
-    int: AbilityValue;
-    wis: AbilityValue;
-    cha: AbilityValue;
-  };
+  stats: CreatureStats;
 
   name: string;
 
@@ -59,12 +53,12 @@ export class CreatureStatblock {
     this.legendaryActions = sb.legendaryActions;
 
     this.stats = {
-      str: this.modFromValue(sb.stats.str),
-      dex: this.modFromValue(sb.stats.dex),
-      con: this.modFromValue(sb.stats.con),
-      int: this.modFromValue(sb.stats.int),
-      wis: this.modFromValue(sb.stats.wis),
-      cha: this.modFromValue(sb.stats.cha),
+      str: modFromValue(sb.stats.str),
+      dex: modFromValue(sb.stats.dex),
+      con: modFromValue(sb.stats.con),
+      int: modFromValue(sb.stats.int),
+      wis: modFromValue(sb.stats.wis),
+      cha: modFromValue(sb.stats.cha),
     };
 
     this.hitPoints = `${Math.round(sb.hitpointAmount * ((1 + sb.hitpointSize) / 2))} (${sb.hitpointAmount}d${sb.hitpointSize} + ${sb.hitpointAmount * this.stats.con.modifier})`;
@@ -77,6 +71,4 @@ export class CreatureStatblock {
       ? "0 ft"
       : Object.entries(sb.speed).map(speed => `${speed[0]} ${speed[1] ?? 0}ft`).join(", ");
   }
-
-  private modFromValue = (value: number): AbilityValue => ({ value, modifier: Math.floor((value - 10) / 2) });
 }

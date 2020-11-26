@@ -11,6 +11,7 @@ import {
   faClock,
   faShieldAlt,
   faShip,
+  faDiceD20,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { Dictionary } from "lodash";
@@ -26,6 +27,7 @@ export const appIcons: Dictionary<{ icon: IconDefinition; color: string }> = {
   [AppRoutes.Items]: { icon: faShieldAlt, color: "green" },
   [AppRoutes.Timeline]: { icon: faClock, color: "purple" },
   [AppRoutes.ShipCalc]: { icon: faShip, color: "lightblue" },
+  [AppRoutes.PlayerChars]: { icon: faDiceD20, color: "lightred" },
   openPanel: { icon: faDungeon, color: "white" },
   closePanel: { icon: faSkullCrossbones, color: "white" },
   download: { icon: faDownload, color: "white" },
