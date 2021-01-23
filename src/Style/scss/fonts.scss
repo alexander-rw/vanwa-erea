@@ -2,12 +2,48 @@
   font-family: "Andada";
   font-style: normal;
   src: local("Andada"),
-      url(../otf/andanda/Andada-Regular.otf) format("otf");
+      url('../fonts/andanda/Andada-Regular.otf') format("opentype");
 }
 
 @font-face {
   font-family: "Roboto";
   font-size: normal;
   src: local("Roboto"),
-    url(../otf/roboto/Roboto-Regular.ttf) format("otf");
+    url('../fonts/roboto/Roboto-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Alphmagi";
+  src: local("Alphmagi"),
+      url('../fonts/Alphmagi.ttf') format("truetype");
+}
+
+.Alphmagi {
+  font-family: "Alphmagi", serif;
+  letter-spacing: 0.15em;
+  word-spacing: 0.6em;
+}
+
+@font-face {
+  font-family: "Hymmnos";
+  src: local("Hymmnos"),
+      url('../fonts/Hymmnos.ttf') format("truetype");
+}
+
+.Hymmnos {
+  font-family: "Hymmnos", serif;
+}
+
+@font-face {
+  font-family: "MarasEye", serif;
+  src: local("MarasEye"), local("Maras Eye")
+      url('../fonts/MarasEye.otf') format("opentype");
+}
+
+.MarasEye {
+  font-family: "MarasEye", serif;
+}
+
+.larger {
+  font-size: xx-large;
 }
