@@ -19,7 +19,7 @@ import { NpcIds } from "../../Constants/Ids/NpcIds";
 import { store } from "../../ReduxStore/ReduxStore";
 
 import { Api } from "../Api/Api";
-import { DisplayCharacters } from "../DisplayCharacter/DisplayCharacters";
+import { Fonts } from "../Fonts/Fonts";
 import { Items } from "../Items/Items";
 import { NavBar } from "../Menu/NavBar";
 
@@ -88,7 +88,7 @@ export class App extends BaseComponent {
             <Route path={AppRoutes.Api} component={Api} />
             <Route path={AppRoutes.Items} component={Items} />
             <Route path={AppRoutes.ShipCalc} component={ShipCalc} />
-            <Route path={AppRoutes.PlayerChars} component={DisplayCharacters} />
+            <Route path={AppRoutes.Fonts} component={Fonts} />
             <Route component={NoMatch} />
           </Switch>
         </BrowserRouter>

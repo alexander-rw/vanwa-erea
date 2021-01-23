@@ -28,6 +28,7 @@ export const appIcons: Dictionary<{ icon: IconDefinition; color: string }> = {
   [AppRoutes.Timeline]: { icon: faClock, color: "purple" },
   [AppRoutes.ShipCalc]: { icon: faShip, color: "lightblue" },
   [AppRoutes.PlayerChars]: { icon: faDiceD20, color: "lightred" },
+  [AppRoutes.Fonts]: { icon: faPenFancy, color: "lightgrey" },
   openPanel: { icon: faDungeon, color: "white" },
   closePanel: { icon: faSkullCrossbones, color: "white" },
   download: { icon: faDownload, color: "white" },

@@ -8,4 +8,5 @@ export enum AppRoutes {
   Api = "/api",
   ShipCalc = "/ship",
   PlayerChars = "/playerchars",
+  Fonts = "/fonts"
 }
