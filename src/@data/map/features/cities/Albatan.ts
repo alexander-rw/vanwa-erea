@@ -2,7 +2,7 @@ import { MapFeature } from "../../../../@types/Map/MapFeature";
 import { LocationIds } from "../../../../Constants/Ids/LocationIds";
 import { DefaultCityProps } from "../../../../Style/ts/MapStyle";
 
-export const Revaris: MapFeature = {
+export const Albatan: MapFeature = {
   id: LocationIds.Albatan,
   type: "Feature",
   properties: DefaultCityProps,

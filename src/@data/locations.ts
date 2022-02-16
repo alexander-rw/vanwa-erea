@@ -6,6 +6,7 @@ import { MisruulDesert } from "./map/locations/MisruulDesert";
 import { MisthalinCountry } from "./map/locations/MisthalinCountry";
 import { VanwaErea } from "./map/locations/VanwaErea";
 import { VoronWeosst, VoronWeosstOuterRing } from "./map/locations/VoronWeosst";
+import { Albatan } from "./map/locations/cities/Albatan";
 import { Derinkuyyu } from "./map/locations/cities/Derinkuyyu";
 import { Hraclos } from "./map/locations/cities/Hraclos";
 import { Hupperdook } from "./map/locations/cities/Hupperdook";
@@ -53,4 +54,5 @@ export const locations: Location[] = [
   Menzoberranzan,
   Hraclos,
   Manifest,
+  Albatan,
 ];

@@ -155,14 +155,14 @@ export enum LocationIds {
   GondImrad = "Gond Imrad (Stone pass)",
   WhiteBrickWaterway = "White Brick Waterway",
   // Towers
-  TowerOfIllusion = "Fallitur (Tower Of Illusion)",
-  TowerOfConjuration = "Tower of Invocations (Tower Of Conjuration)",
-  TowerOfTransmutation = "Host Tower of the Arcane (Tower Of Transmutation)",
-  TowerOfNecromancy = "Gwistanneth Tower (Tower Of Necromancy)",
-  TowerOfAbjuration = "Blackstaff Tower (Tower Of Abjuration)",
-  TowerOfEvocation = "Ultimyr Academy (Tower Of Evocation)",
-  TowerOfEnchantment = "Sanctum Arcanum (Tower Of Enchantment)",
-  TowerOfDivination = "The Palantir's Eye (Tower Of Divination)",
+  TowerOfIllusion = "Fallitur (Tower Of Illusion)", // Vvardenbridge
+  TowerOfConjuration = "Tower of Invocations (Tower Of Conjuration)", // NE of Manifest
+  TowerOfTransmutation = "Host Tower of the Arcane (Tower Of Transmutation)", // Voronweosst
+  TowerOfNecromancy = "Gwistanneth Tower (Tower Of Necromancy)", // SE manifest
+  TowerOfAbjuration = "Blackstaff Tower (Tower Of Abjuration)", // Waterdeep
+  TowerOfEvocation = "Ultimyr Academy (Tower Of Evocation)", // Hupperdook
+  TowerOfEnchantment = "Sanctum Arcanum (Tower Of Enchantment)", // Vvardenrock
+  TowerOfDivination = "The Palantir's Eye (Tower Of Divination)", // Seers Village
   // monasteries
   MonasteryOfSaintCuthbert = "Monastery Of Saint Cuthbert",
   GwanuandaveMonastery = "Gwanu'andavë Monastery",

@@ -24,7 +24,7 @@ const PlayfairMapper: React.FC<{ text: string; extra: string; className?: string
       <OverlayTrigger
         key={id}
         trigger="click"
-        placement="top"
+        placement="auto"
         overlay={
           <Tooltip id={`tooltip-${id}`}>{text}</Tooltip>
         }

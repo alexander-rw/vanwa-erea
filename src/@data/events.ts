@@ -218,7 +218,7 @@ const eventConstructors: WorldEventConstructor[] = [
   {
     loc: LocationIds.Albatan,
     dateVals: [5, 156, 9, 23],
-    description: `${PlayerIds.Rhaecondorius} and his family are foced to Flee ${dataItemToLinkable(DataTypeIds.Location, LocationIds.Albatan)} because his father was a lil bit stabbed.`,
+    description: `${PlayerIds.Rhaecondorius} and his family are forced to Flee ${dataItemToLinkable(DataTypeIds.Location, LocationIds.Albatan)} because his father was a lil bit stabbed. ${PlayerIds.Rhaecondorius} and his family flee north to the Salus-Formiae.`,
   },
   {
     loc: LocationIds.SalusiFormiae,

@@ -30,7 +30,7 @@ import { VanwaErea } from "./features/areas/VanwaErea";
 import { VvardenbridgeSwamp } from "./features/areas/VvardenbridgeSwamp";
 
 import { AlKharid } from "./features/cities/AlKharid";
-import { Revaris } from "./features/cities/Albatan";
+import { Albatan } from "./features/cities/Albatan";
 import { Alinor } from "./features/cities/Alinor";
 import { Atmorra } from "./features/cities/Atmorra";
 import { Basilaris } from "./features/cities/Basilaris";
@@ -200,14 +200,14 @@ export const recursiveMapFeatures: RecursiveMapFeature = {
           feature: KharidianEmpire,
           features: [
             f(AlKharidGate),
+            f(AlKharid),
+            f(Albatan),
             f(RevarisGate),
             f(NaktamunGate),
             f(AmethystSands),
             f(SapphireSands),
             f(PortVolo),
             f(LakeRevaris),
-            f(Revaris),
-            f(AlKharid),
             {
               feature: LakeUzer,
               features: [

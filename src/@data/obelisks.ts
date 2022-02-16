@@ -13,8 +13,8 @@ export const obelisks: ObeliskData[] = [
   {
     extraInfo: "Misruul Desert",
     text: `This pillar holds the key for which the Efreeti Misruul and Marid Calim are imprisoned; disrespect and destruction /
-    Release the key by speaking their names, and condemming them for their crimes, but beware the danger that you may unleash /
-    The crystal does not just hold two dangerous creatures, but the connection to an entire plane`,
+    Release the key by speaking their names and condemming them for their crimes but beware the danger that you may unleash /
+    The crystal does not just hold two dangerous creatures but the connection to an entire plane`,
     // opening this holds a scroll written in Alphmagi, that says "The words upon this scroll are simply a compass", pointing the players towards the spinning keep of Siri-wajden.
     // Opening this obelisk re-ignites the portal to the plane of water nearby, and will stop the flow from Vvardenrock's main central portal that flows from its rock.
     // Heading to the Keep and (optionally) opening the crstal spawns both of the creatures; the players may ally with either (depending on what they would like the end effects to be)
@@ -31,14 +31,14 @@ export const obelisks: ObeliskData[] = [
   {
     extraInfo: "Manifest, embedded into the rock near the port walkway",
     text: `A beast of the sea connected to the fleet that was destroyed here so long ago /
-    Speak its name, and be consumed by the sea. Slarkrethel, despoiler of coasts and planes`,
+    Speak its name and be consumed by the sea. Slarkrethel despoiler of coasts and planes`,
     // releasees Slarkrethel
     location: [0, 0], // Manifest
   },
   {
     extraInfo: "Outside Falador Castle",
     text: `The creature from the negative plane could not destroyed, so was sealed away /
-    Flood the plaque with negative energy, and let the creature be released. Pray to the god of war, and the sword may give you a worthy tool for the fight /`,
+    Flood the plaque with negative energy and let the creature be released. Pray to the god of war and the sword may give you a worthy tool for the fight /`,
     // a nightwalker! plus a nine lives stealer with a single charge
     location: [0, 0], // Falador
   },
@@ -46,7 +46,7 @@ export const obelisks: ObeliskData[] = [
     extraInfo: "?",
     text: `The sword in here may seem simple, but it is insidious and destructive /
     The sword is guarded by creatures native to the hells /
-    Sacrifice an innocent creature and rub its blood on the plaque, and let the sword be released`,
+    Sacrifice an innocent creature and rub its blood on the plaque and let the sword be released`,
     // Releasees a Pit Fiend and some other devils and has Blackrazor inside it
     location: [0, 0],
   },
@@ -60,7 +60,7 @@ export const obelisks: ObeliskData[] = [
   {
     extraInfo: "Somewhere in the Kharidian Desert",
     text: `When you are sure this may be destroyed call out the heathens name and perform a bloodletting upon the words here /
-    You must be prepared, for His presence is inevitable even through death /
+    You must be prepared for His presence is inevitable even through death /
     Vecna controls undeath`,
     // Contains the eye of Vecna and will possibly summon him?
     location: [0, 0], //
